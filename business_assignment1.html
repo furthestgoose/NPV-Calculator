@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tags for viewport and character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Without this tag the currency display in the results at the end wouldn't function -->
+    <meta charset="UTF-8">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- Form for input fields -->
+<form id="regForm">
+    <h1>Net Present Value Calculator</h1>
+    <div class="tab">Project 1:
+        <!-- Name input field for cash flow of Project 1 -->
+        <p><label for="name0">Project Name:</label><input type="text" id="name0" name="name"></p>
+        <!-- Input fields for cash flow of Project 1 -->
+        <p><label for="0in">Year 0 cash in:</label><input type="text" id="0in" name="0in" oninput="this.className = ''"></p>
+        <p><label for="0out">Year 0 cash out:</label><input type="text" id="0out" name="0out" oninput="this.className = ''"></p>
+        <p><label for="0fact">Year 0 discount factor:</label><input type="text" id="0fact" name="0fact" oninput="this.className = ''"></p>
+        <p><label for="1in">Year 1 cash in:</label><input type="text" id="1in" name="1in" oninput="this.className = ''"></p>
+        <p><label for="1out">Year 1 cash out:</label><input type="text" id="1out" name="1out" oninput="this.className = ''"></p>
+        <p><label for="1fact">Year 1 discount factor:</label><input type="text" id="1fact" name="1fact" oninput="this.className = ''"></p>
+        <p><label for="2in">Year 2 cash in:</label><input type="text" id="2in" name="2in" oninput="this.className = ''"></p>
+        <p><label for="2out">Year 2 cash out:</label><input type="text" id="2out" name="2out" oninput="this.className = ''"></p>
+        <p><label for="2fact">Year 2 discount factor:</label><input type="text" id="2fact" name="2fact" oninput="this.className = ''"></p>
+        <p><label for="3in">Year 3 cash in:</label><input type="text" id="3in" name="3in" oninput="this.className = ''"></p>
+        <p><label for="3out">Year 3 cash out:</label><input type="text" id="3out" name="3out" oninput="this.className = ''"></p>
+        <p><label for="3fact">Year 3 discount factor:</label><input type="text" id="3fact" name="3fact" oninput="this.className = ''"></p>
+    </div>
+    <!-- Tab for Project Y -->
+    <div class="tab">Project 2:
+        <!-- Name input field for cash flow of Project 2 -->
+        <p><label for="name1">Project Name:</label><input type="text" id="name1" name="name"></p>
+        <!-- Input fields for cash flow of Project 2 -->
+        <p><label for="0in">Year 0 cash in:</label><input type="text" id="0in" name="0in" oninput="this.className = ''"></p>
+        <p><label for="0out">Year 0 cash out:</label><input type="text" id="0out" name="0out" oninput="this.className = ''"></p>
+        <p><label for="0fact">Year 0 discount factor:</label><input type="text" id="0fact" name="0fact" oninput="this.className = ''"></p>
+        <p><label for="1in">Year 1 cash in:</label><input type="text" id="1in" name="1in" oninput="this.className = ''"></p>
+        <p><label for="1out">Year 1 cash out:</label><input type="text" id="1out" name="1out" oninput="this.className = ''"></p>
+        <p><label for="1fact">Year 1 discount factor:</label><input type="text" id="1fact" name="1fact" oninput="this.className = ''"></p>
+        <p><label for="2in">Year 2 cash in:</label><input type="text" id="2in" name="2in" oninput="this.className = ''"></p>
+        <p><label for="2out">Year 2 cash out:</label><input type="text" id="2out" name="2out" oninput="this.className = ''"></p>
+        <p><label for="2fact">Year 2 discount factor:</label><input type="text" id="2fact" name="2fact" oninput="this.className = ''"></p>
+        <p><label for="3in">Year 3 cash in:</label><input type="text" id="3in" name="3in" oninput="this.className = ''"></p>
+        <p><label for="3out">Year 3 cash out:</label><input type="text" id="3out" name="3out" oninput="this.className = ''"></p>
+        <p><label for="3fact">Year 3 discount factor:</label><input type="text" id="3fact" name="3fact" oninput="this.className = ''"></p>
+    </div>
+    <!-- Tab for Project Z -->
+    <div class="tab">Project 3:
+       <!-- Name input field for cash flow of Project 3 -->
+        <p><label for="name2">Project Name:</label><input type="text" id="name2" name="name"></p>
+        <!-- Input fields for cash flow of Project 3 -->
+        <p><label for="0in">Year 0 cash in:</label><input type="text" id="0in" name="0in" oninput="this.className = ''"></p>
+        <p><label for="0out">Year 0 cash out:</label><input type="text" id="0out" name="0out" oninput="this.className = ''"></p>
+        <p><label for="0fact">Year 0 discount factor:</label><input type="text" id="0fact" name="0fact" oninput="this.className = ''"></p>
+        <p><label for="1in">Year 1 cash in:</label><input type="text" id="1in" name="1in" oninput="this.className = ''"></p>
+        <p><label for="1out">Year 1 cash out:</label><input type="text" id="1out" name="1out" oninput="this.className = ''"></p>
+        <p><label for="1fact">Year 1 discount factor:</label><input type="text" id="1fact" name="1fact" oninput="this.className = ''"></p>
+        <p><label for="2in">Year 2 cash in:</label><input type="text" id="2in" name="2in" oninput="this.className = ''"></p>
+        <p><label for="2out">Year 2 cash out:</label><input type="text" id="2out" name="2out" oninput="this.className = ''"></p>
+        <p><label for="2fact">Year 2 discount factor:</label><input type="text" id="2fact" name="2fact" oninput="this.className = ''"></p>
+        <p><label for="3in">Year 3 cash in:</label><input type="text" id="3in" name="3in" oninput="this.className = ''"></p>
+        <p><label for="3out">Year 3 cash out:</label><input type="text" id="3out" name="3out" oninput="this.className = ''"></p>
+        <p><label for="3fact">Year 3 discount factor:</label><input type="text" id="3fact" name="3fact" oninput="this.className = ''"></p>
+    </div>
+    <!-- Container for displaying result -->
+    <div id="resultContainer"></div>
+    <div style="overflow:auto;">
+        <div style="float:right;">
+            <!-- Previous and Next buttons for navigation -->
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </div>
+    <!-- Step indicators -->
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+</form>
+
+<!-- Link to external JavaScript file -->
+<script src='scripts.js'></script>
+</body>
+</html>
+
